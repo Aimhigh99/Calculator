@@ -1,0 +1,338 @@
+<!-- Windows 11 Calculator with Dark Mode, Slide-in Menu and Click to Copy - HTML, CSS & JavaScript
+Follow me on;
+Twitter: https://twitter.com/ericaimhigh
+Instagram: https://instagram.com/@ericaimhigh_
+Threads: https://threads.net/@ericaimhigh_ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="menu">
+            <i class="fa fa-bars menuBtn"></i>
+
+            <ul>
+                <h5>Calculator</h5>
+                <a href="#">
+                    <li class="active">
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-calculator"></i>
+                        <span class="menu-name">Standard</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-flask"></i>
+                        <span class="menu-name">Scientific</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-chart-line-up"></i>
+                        <span class="menu-name">Graphing</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-code"></i>
+                        <span class="menu-name">Programmer</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-calendar"></i>
+                        <span class="menu-name">Date Calculation</span>
+                    </li>
+                </a>
+
+
+                <h5>Converter</h5>
+
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-coins"></i>
+                        <span class="menu-name">Currency</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-cube"></i>
+                        <span class="menu-name">Volume</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-ruler-vertical"></i>
+                        <span class="menu-name">Length</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-weight"></i>
+                        <span class="menu-name">Weight and mass</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-temperature-full"></i>
+                        <span class="menu-name">Temperature</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-fire-flame-curved"></i>
+                        <span class="menu-name">Energy</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-layer-plus"></i>
+                        <span class="menu-name">Area</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-person-running"></i>
+                        <span class="menu-name">Speed</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-clock"></i>
+                        <span class="menu-name">Time</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-bolt-lightning"></i>
+                        <span class="menu-name">Power</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-file-binary"></i>
+                        <span class="menu-name">Data</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-gauge"></i>
+                        <span class="menu-name">Pressure</span>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <div class="indicator"> </div>
+                        <i class="fa-light fa-angle"></i>
+                        <span class="menu-name">Angle</span>
+                    </li>
+                </a>
+            </ul>
+            <a href="#">
+                <div class="settings">
+                    <li>
+                        <i class="fa-light fa-cog"></i>
+                        <span class="menu-name">Settings</span>
+                    </li>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="title-bar">
+            <div class="left">
+                <i class="fa-duotone fa-calculator"></i>
+                <span class="title">Calculator</span>
+            </div>
+            <div class="right">
+                <button class="hide"><i class="fa fa-dash"></i></button>
+                <button class="resize"><i class="fa-regular fa-square"></i></button>
+                <a href="#"><button class="close"><i class="fa fa-close"></i></button></a>
+            </div>
+        </div>
+        <div class="options">
+            <div class="a"><i class="fa fa-bars menuBtn2"></i>
+                <span class="type-name">Standard</span>
+                <i class="fa-regular fa-sun-alt theme"></i>
+            </div>
+            <div class="b"><i class="fa-regular fa-copy"></i></div>
+
+
+        </div>
+
+
+        <form>
+            <input type="text" value=" " disabled class="display2" name="display2">
+            <input type="text" value="0" disabled class="display" name="display">
+            <div class="memory">
+                <button class="mry off" value="mc">MC</button>
+                <button class="mry off" value="mr">MR</button>
+                <button class="mry on" value="m+">M+</button>
+                <button class="mry on" value="m-">M-</button>
+                <button class="mry on" value="ms">MS</button>
+                <button class="mry off" value="m">M <i class="fa fa-chevron-down fa-2xs"></i></button>
+            </div>
+            <div class="buttons">
+
+                <input type="button" name="btn" class="btn" value="%"
+                    onclick="display2.value = display.value +'/100'; display.value = display.value / 100">
+
+                <input type="button" name="btn" class="btn" value="CE" onclick="display.value = ''">
+
+                <input type="button" name="btn" class="btn" value="C" onclick="display.value = 0; display2.value = ''">
+
+                <input type="button" name="btn" class="btn" value="Del"
+                    onclick="display.value = display.value.toString().slice(0,-1)">
+
+
+                <input type="button" name="btn" class="btn " value="1/x"
+                    onclick="display2.value = '1/(' + display.value + ')'; display.value = eval(1/display.value)">
+
+                <input type="button" name="btn" class="btn " value="x &#178;"
+                    onclick="display2.value = 'sqr(' + display.value + ')'; display.value = eval(Math.pow(display.value, 2))">
+
+                <input type="button" name="btn" class="btn " value="2 &#8730; x"
+                    onclick="display2.value = '&#8730;(' + display.value + ')'; display.value = eval(Math.sqrt(display.value))">
+
+                <input type="button" name="btn" class="btn" value="&divide" onclick="display.value += '/'">
+
+                <input type="button" name="btn" class="btn num" value="7" onclick="
+                if (display.value === '0'){
+                    display.value = 7
+                } else {
+                    display.value += 7;
+                }">
+
+                <input type="button" name="btn" class="btn num" value="8" onclick="
+                if (display.value === '0'){
+                    display.value = 8
+                } else {
+                    display.value += 8;
+                }">
+
+                <input type="button" name="btn" class="btn num" value="9" onclick="
+                if (display.value === '0'){
+                    display.value = 9
+                } else {
+                    display.value += 9;
+                }">
+
+                <input type="button" name="btn" class="btn" value="&#xd7;" onclick="display.value += '*'">
+
+                <input type="button" name="btn" class="btn num" value="4" onclick="
+                if (display.value === '0'){
+                    display.value = 4
+                } else {
+                    display.value += 4;
+                }
+                ">
+
+                <input type="button" name="btn" class="btn num" value="5" onclick="
+                if (display.value === '0'){
+                    display.value = 5
+                } else {
+                    display.value += 5;
+                }">
+
+                <input type="button" name="btn" class="btn num" value="6" onclick="
+                if (display.value === '0'){
+                    display.value = 6
+                } else {
+                    display.value += 6;
+                }">
+
+                <input type="button" name="btn" class="btn" value="&#x2212;" onclick="display.value += '-'">
+
+                <input type="button" name="btn" class="btn num" value="1" onclick="
+                        if (display.value === '0'){
+                    display.value = 1
+                } else {
+                    display.value += 1;
+                }">
+
+                <input type="button" name="btn" class="btn num" value="2" onclick="
+                        if (display.value === '0'){
+                    display.value = 2
+                } else {
+                    display.value += 2;
+                }">
+
+                <input type="button" name="btn" class="btn num" value="3" onclick="if (display.value === '0'){
+                    display.value = 3
+                } else {
+                    display.value += 3;
+                }">
+
+                <input type="button" name="btn" class="btn" value="+" onclick="display.value += '+'">
+
+
+                <input type="button" class="btn" value="+/-" onclick=" 
+                    if (display.value.startsWith('-')){
+                        display.value = display.value.toString().slice(1)
+                    } else if(display.value === '0') {
+                        display.value = 0
+                    } else {
+                        display.value ='-' + display.value
+                    }">
+
+
+
+
+                <input type="button" class="btn num" value="0" onclick="
+                if (display.value === '0'){
+                    display.value = 0
+                } else {
+                    display.value += 0;
+                }
+                ">
+
+
+                <input type="button" name="btn" class="btn" value="." onclick="display.value += '.'">
+
+                <input type="button" name="btn" class="btn eq" value="="
+                    onclick="display2.value = display.value + '='; display.value = eval(display.value); ">
+
+
+
+
+
+
+            </div>
+
+    </div>
+
+    </form>
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
